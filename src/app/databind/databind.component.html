@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div>
+        <h2> Databinding</h2>
+        <h3> Username: {{username}} </h3>
+        <div>
+            <input type="text" #un (input)="handleChange(un.value)"> 
+            <button [disabled]="isDisabled" (click) ='updatename(un.value)'>Change Name</button>
+        </div>
+        <div>
+            <h2>Two Way Binding</h2>
+            <input [(ngModel)] = 'firstname'> <br />
+            <input [(ngModel)] = 'lastname'> <br />
+            <input [(ngModel)] = 'firstname'> <br />
+            <input [(ngModel)] = 'lastname'> <br />
+        </div>
+    </div>
+</body>
+</html>
