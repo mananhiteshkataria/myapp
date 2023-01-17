@@ -33,4 +33,5 @@ export class DatabindComponent {
   }
   mystyles={"background-color": "aquamarine"}
 
+
 }
