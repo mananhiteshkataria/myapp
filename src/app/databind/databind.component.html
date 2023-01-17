@@ -12,7 +12,7 @@
         <div>
             <h2>Event Binding</h2>
             <input type="text" #un (input)="handleChange(un.value)"> 
-            <button [disabled]="isDisabled" (click) ='updatename(un.value)'>Change Name</button>
+            <button class="btn btn-primary" [disabled]="isDisabled" (click) ='updatename(un.value)'>Change Name</button>
         </div>
         <div>
             <h2>Two Way Binding</h2>
