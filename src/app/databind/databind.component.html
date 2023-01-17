@@ -7,8 +7,10 @@
 <body>
     <div>
         <h2> Databinding</h2>
+        <h2>Interpolation</h2>
         <h3> Username: {{username}} </h3>
         <div>
+            <h2>Event Binding</h2>
             <input type="text" #un (input)="handleChange(un.value)"> 
             <button [disabled]="isDisabled" (click) ='updatename(un.value)'>Change Name</button>
         </div>
@@ -18,6 +20,17 @@
             <input [(ngModel)] = 'lastname'> <br />
             <input [(ngModel)] = 'firstname'> <br />
             <input [(ngModel)] = 'lastname'> <br />
+        </div>
+        <h2>Class Binding</h2>
+        <div [class.one]='isDisabled'>
+            <h1>is disabled :{{isDisabled}}</h1>
+        </div>
+        <div class="one"> 
+            <p> using class directly </p>
+        </div>
+        <div [style]="mystyles">
+            <h2>Style Binding</h2>
+            <P>isntead of using css i used the typescript file to make a style</P>
         </div>
     </div>
 </body>

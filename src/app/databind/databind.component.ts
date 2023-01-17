@@ -16,16 +16,21 @@ export class DatabindComponent {
     this.username=name;
   }
   isDisabled=true;
+  
   // below function is called on each input
   handleChange(name:string): void
   {
     if(name.length==0)
     {
       this.isDisabled=true;
+     
     }
     else
     {
       this.isDisabled=false;
+      
     }
   }
+  mystyles={"background-color": "aquamarine"}
+
 }
