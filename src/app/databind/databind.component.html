@@ -10,10 +10,12 @@
         </div>
         <div>
             <h2>Two Way Binding</h2>
-            <input [(ngModel)] = 'firstname'> <br />
-            <input [(ngModel)] = 'lastname'> <br />
-            <input [(ngModel)] = 'firstname'> <br />
-            <input [(ngModel)] = 'lastname'> <br />
+            <form>
+            <label>FIrstname</label><input [(ngModel)] = 'firstname'> <br />
+            <label>lastname</label><input [(ngModel)] = 'lastname'> <br />
+            <label>Firstname</label><input [(ngModel)] = 'firstname'> <br />
+            <label>Lastname</label><input [(ngModel)] = 'lastname'> <br />
+        </form>
         </div>
         <h2>Class Binding</h2>
         <div [class.one]='isDisabled'>
@@ -29,7 +31,8 @@
         </div>
         <div>
             <h1>NGFOR</h1>
-            <li *ngFor="let ele of items">{{ele}}</li><br>
+            <ul>
+            <li *ngFor="let ele of items">{{ele}}</li></ul><br>
             <tr *ngFor="let u of users">
                 <td>{{u.name}}</td>&nbsp;
                 <td>{{u.age}}</td>
