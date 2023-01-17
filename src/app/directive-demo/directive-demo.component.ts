@@ -15,9 +15,9 @@ handleClick(): void
   {
   this.users=undefined;
 }else{
-  this.users=[{id:100,name:"Manan",age:24,salary:400000,dob:"1998-08-22"},
-  {id:200,name:"Max",age:34,salary:50000,dob:"1988-08-22"},
-  {id:300,name:"Manav",age:44,salary:5000,dob:"1978-08-22"}];
+  this.users=[{id:100,name:"Manan Kataria",age:24,salary:400000,dob:"1998-08-22",gender:"Male"},
+  {id:200,name:"Max Lemin",age:34,salary:50000,dob:"1988-08-22",gender:"Male"},
+  {id:300,name:"Mansi Mashru",age:44,salary:5000,dob:"1978-08-22",gender:"Female"}];
 }
 }
 }
