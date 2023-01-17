@@ -14,15 +14,18 @@
                 {{ele.id}}
         </td>
         <td>
-            {{ele.name}}
+            {{ele.name | uppercase}}
         </td>
         <td>
             {{ele.age}}
         </td>
+        <!--Angular Pipes-->
         <td>
-            {{ele.salary}}
+            {{ele.salary |  currency:'INR'}}
         </td>
 </tr>
 </tbody>
 </table>
 </div>
+
+
