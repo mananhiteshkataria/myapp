@@ -7,3 +7,6 @@
     <app-directive-demo></app-directive-demo>
     <app-item [itemname]="username"></app-item>
   </div>
+<div *ngFor="let i of usernamesArray">
+<app-item [itemname]="i"></app-item>
+</div>
