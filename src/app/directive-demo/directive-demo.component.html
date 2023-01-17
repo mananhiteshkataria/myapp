@@ -5,7 +5,7 @@
     <table *ngIf="users" class="table table-bordered">
         <thead>
             <tr>
-                <th>ID</th><th>Name</th><th>age</th><th>Gender</th><th>Salary</th><th>DOB</th>
+                <th>ID</th><th>Name</th><th>age</th><th>Gender</th><th>Married</th><th>Salary</th><th>DOB</th>
             </tr>
         </thead>
         <tbody>
@@ -14,13 +14,16 @@
                 {{ele.id}}
         </td>
         <td>
-            {{ele.name | nameformat : ele.gender}}
+            {{ele.name | nameformat : ele.gender: ele.married}}
         </td>
         <td>
             {{ele.age}}
         </td>
         <td>
             {{ele.gender}}
+        </td>
+        <td>
+            {{ele.married}}
         </td>
         <!--Angular Pipes-->
         <td>
