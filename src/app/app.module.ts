@@ -6,6 +6,7 @@ import { DatabindComponent } from './databind/databind.component';
 import { UserComponent } from './user/user.component';
 import { DirectiveDemoComponent } from './directive-demo/directive-demo.component';
 import { NameformatPipe } from './nameformat.pipe';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { NameformatPipe } from './nameformat.pipe';
     DatabindComponent,
     UserComponent,
     DirectiveDemoComponent,
-    NameformatPipe
+    NameformatPipe,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

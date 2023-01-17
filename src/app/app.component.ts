@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular Tutorial';
+  title = 'Parent Component';
+  username="Manan";
+  usernamesArray=["Sachin","Kohli","Dhoni"];
+
 }
