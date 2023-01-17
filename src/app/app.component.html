@@ -2,11 +2,17 @@
   <div>
     <h1> this is app component</h1>
     <h2> Title : {{title}}</h2>
+    <div>
+      <p> Parent Component Counter : {{counter}} </p>
+    </div>
+    <app-item [itemname]="username" (itemCounter)="counter=$event"></app-item>
+    <div *ngFor="let i of usernamesArray">
+        <app-item [itemname]="i" (itemCounter)="counter=$event">
+          
+        </app-item>
+    </div>
+   
     <app-user></app-user>
     <app-databind></app-databind>
     <app-directive-demo></app-directive-demo>
-    <app-item [itemname]="username"></app-item>
   </div>
-<div *ngFor="let i of usernamesArray">
-<app-item [itemname]="i"></app-item>
-</div>

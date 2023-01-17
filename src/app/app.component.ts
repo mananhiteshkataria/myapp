@@ -9,5 +9,6 @@ export class AppComponent {
   title = 'Parent Component';
   username="Manan";
   usernamesArray=["Sachin","Kohli","Dhoni"];
+  counter : number =0;
 
 }
