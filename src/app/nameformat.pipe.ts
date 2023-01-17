@@ -4,9 +4,10 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'nameformat'
 })
 export class NameformatPipe implements PipeTransform {
-
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+// we will use {{name| nameFormat : gender}}
+  transform(value: string,args: string): string {
+    if(args=='Male') return 'Mr. '+value;
+    else return 'Ms. '+value;
   }
 
 }
