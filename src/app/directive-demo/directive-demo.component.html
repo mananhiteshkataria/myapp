@@ -5,7 +5,7 @@
     <table *ngIf="users" class="table table-striped">
         <thead>
             <tr>
-                <th>ID</th><th>Name</th><th>age</th><th>Salary</th>
+                <th>ID</th><th>Name</th><th>age</th><th>Salary</th><th>DOB</th>
             </tr>
         </thead>
         <tbody>
@@ -22,6 +22,9 @@
         <!--Angular Pipes-->
         <td>
             {{ele.salary |  currency:'INR'}}
+        </td>
+        <td>
+            {{ele.dob | date : "dd-MM-yyyy"}}
         </td>
 </tr>
 </tbody>
