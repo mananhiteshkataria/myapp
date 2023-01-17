@@ -43,7 +43,10 @@
         </div>
         <div>
             <h1>NGIF</h1>
-            
+            <div *ngIf="item1">Shows {{item1}}</div>
+            <div *ngIf="item2">Shows nothing {{item2}}</div>
+            <div *ngIf="item3">Shows something or nothing {{item3}}</div>
+            <div *ngIf="item4">Shows {{item4}}</div>
         </div>
     </div>
 </body>

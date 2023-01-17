@@ -34,6 +34,9 @@ export class DatabindComponent {
   mystyles={"background-color": "aquamarine"}
   items=["welcome","hello","bye"];
   users=[{name:"Manan", age:24},{name:"Virat",age:25}]
-
+item1=true;
+item2=false;
+item3=undefined;
+item4="Kami";
 
 }
