@@ -1,1 +1,25 @@
-<p>directive-demo works!</p>
+<div class="container-fluid">
+    <h1>Learning ngIF and ngFor</h1>
+    <button (click)="handleClick()" class="btn btn-danger">Toggle</button>
+    <div >Counter :{{counter}} </div>
+    <table *ngIf="users" class="table">
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th><th>age</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let ele of users">
+        <td>
+                {{ele.id}}
+        </td>
+        <td>
+            {{ele.name}}
+        </td>
+        <td>
+            {{ele.age}}
+        </td>
+</tr>
+</tbody>
+</table>
+</div>
