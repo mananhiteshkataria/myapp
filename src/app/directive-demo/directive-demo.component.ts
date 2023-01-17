@@ -15,7 +15,9 @@ handleClick(): void
   {
   this.users=undefined;
 }else{
-  this.users=[{id:100,name:"Manan",age:24},{id:200,name:"Max",age:34},{id:300,name:"Manav",age:44}];
+  this.users=[{id:100,name:"Manan",age:24,salary:400000},
+  {id:200,name:"Max",age:34,salary:50000},
+  {id:300,name:"Manav",age:44,salary:5000}];
 }
 }
 }
